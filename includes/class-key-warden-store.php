@@ -45,7 +45,7 @@ class Key_Warden_Store {
         if (array_key_exists('profile', $changes)) $values['profile'] = Key_Warden_Settings::clean_profile_id($changes['profile'], true);
         if (!$values) return true;
 
-        // Say what changed, e.g. "Suspended, expiry. By paul".
+        // Say what changed, e.g. "Suspended, expiry. By jane".
         $before = self::get($user_id, $uuid);
         $parts = array();
         if (isset($values['suspended']) && $values['suspended'] !== (bool) $before['suspended']) {

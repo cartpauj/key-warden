@@ -26,7 +26,7 @@ class Key_Warden_Log {
      * Log a configuration change by the current user, noting the app password if one was used (e.g. an AI agent).
      */
     /**
-     * "By paul", "By paul, using application password "Claude"", "By WP-CLI", or "Automatic".
+     * "By jane", "By jane, using application password "Claude"", "By WP-CLI", or "Automatic".
      */
     public static function actor() {
         if (defined('WP_CLI') && WP_CLI) return __('By WP-CLI', 'key-warden');

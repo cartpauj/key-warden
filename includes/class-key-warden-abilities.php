@@ -75,7 +75,7 @@ class Key_Warden_Abilities {
             'description' => __('Creates an application password for a user and returns the plain password. It is shown only once, so pass it on to the person who needs it. Follows the plugin\'s "who can create" and per-user limit rules, and sends the new-password email alert if it is on.', 'key-warden'),
             'input'       => array(
                 'user'    => array('type' => array('string', 'integer'), 'description' => __('User ID, username, or email.', 'key-warden')),
-                'name'    => array('type' => 'string', 'description' => __('A name to recognize it by, e.g. "Claude on Paul\'s laptop".', 'key-warden')),
+                'name'    => array('type' => 'string', 'description' => __('A name to recognize it by, e.g. "Claude on my laptop".', 'key-warden')),
                 'expires' => $expires,
                 'profile' => $profile,
             ),
